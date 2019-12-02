@@ -1,0 +1,60 @@
+@font-face {
+	font-family: "Jura Bold";
+	font-style: normal;
+	font-weight: normal;
+	font-display: fallback;
+	src: url("../assets/fonts/Jura-Bold.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Jura Medium";
+	font-style: normal;
+	font-weight: normal;
+	font-display: fallback;
+	src: url("../assets/fonts/Jura-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Jura Regular";
+	font-style: normal;
+	font-weight: normal;
+	font-display: fallback;
+	src: url("../assets/fonts/Jura-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Jura Semi Bold";
+	font-style: normal;
+	font-weight: normal;
+	font-display: fallback;
+	src: url("../assets/fonts/Jura-SemiBold.ttf") format("truetype");
+}
+
+@import "~rc-tabs/assets/index.css";
+
+.rc-tabs-top,
+.rc-tabs-left,
+.rc-tabs-top .rc-tabs-bar,
+.rc-tabs-left .rc-tabs-bar {
+	border: 0;
+	color: #23c0fa;
+}
+
+.rc-tabs-nav-wrap {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	// background-color: rgba(2, 38, 64, 0.15);
+	background-color: rgba(16, 142, 233, 0.6);
+}
+
+.rc-tabs-tab:hover {
+	color: #a8e6fd;
+}
+
+.rc-tabs-tab-active {
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer !important;
+}
+
+.bar {
+	width: 10px !important;
+	background-color: #d5f4ff;
+}
