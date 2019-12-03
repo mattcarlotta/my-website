@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./root";
-import "./styles/globals/globals.scss";
+// import "./styles/globals/globals.scss";
 
 const render = Component => {
 	ReactDOM.render(<Component />, document.getElementById("root"));

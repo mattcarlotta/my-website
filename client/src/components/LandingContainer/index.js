@@ -11,4 +11,5 @@ export default styled.div`
 	padding: 0 10px;
 	background-position: bottom;
 	background-repeat: no-repeat;
+	overflow: hidden;
 `;

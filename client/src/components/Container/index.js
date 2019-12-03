@@ -6,5 +6,5 @@ export default styled.div`
 	max-width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 50px;
+	margin-top: 75px;
 `;
