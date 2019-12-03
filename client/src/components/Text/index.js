@@ -2,5 +2,6 @@
 import styled from "styled-components";
 
 export default styled.div`
-	font-size: 16px;
+	letter-spacing: 1px;
+	padding: 0 20px;
 `;

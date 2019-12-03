@@ -2,10 +2,8 @@
 import styled from "styled-components";
 
 export default styled.div`
-	letter-spacing: 2px;
-	font-size: 22px;
-	text-align: center;
-	margin: 20px;
+	margin: 0;
+	padding: 0;
 
 	a,
 	a:visited {

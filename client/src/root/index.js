@@ -13,12 +13,11 @@ import Spinner from "components/Spinner";
 const Root = () => (
 	<Fragment>
 		<GlobalStyles />
-
 		<Wrapper>
 			<LandingContainer>
 				<Header />
 				<Spinner />
-				<Center style={{ paddingTop: 50 }}>
+				<Center style={{ paddingTop: 40 }}>
 					<Headline>MATT CARLOTTA</Headline>
 					<SubHeadline>
 						full stack web developer and commercial artist

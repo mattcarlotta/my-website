@@ -4,7 +4,7 @@ import Spinner from "./Spinner";
 
 export default styled(Spinner)`
 	position: relative;
-	top: 65px;
+	top: 55px;
 	opacity: 0.25;
 
 	.spinner {
