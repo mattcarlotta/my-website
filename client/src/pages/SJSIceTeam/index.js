@@ -1,6 +1,6 @@
 import React from "react";
 import Panel from "components/Panel";
-import Info from "components/Info";
+import FileDetails from "components/FileDetails";
 import SubTitle from "components/SubTitle";
 import Text from "components/Text";
 import Title from "components/Title";
@@ -9,28 +9,15 @@ import SJSIceTeamImage from "images/sjsiceteam.png";
 const SJSIceTeam = () => (
 	<Panel>
 		<Text>
-			<Info style={{ marginTop: 20 }}>File: 7265616374686f6f6b73</Info>
-			<Info>Status: online</Info>
-			<Info>
-				Destination:&nbsp;
-				<a
-					href="https://sjsiceteam.com"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					https://www.sjsiceamteam.com
-				</a>
-			</Info>
-			<Info>
-				Source:&nbsp;
-				<a
-					href="https://github.com/mattcarlotta/SJSITApp"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					github
-				</a>
-			</Info>
+			<FileDetails
+				fileName="736a736963657465616d"
+				destination={{
+					link: "https://sjsiceteam.com",
+					text: "https://sjsiceteam.com",
+				}}
+				status="online"
+				source="https://github.com/mattcarlotta/SJSITApp"
+			/>
 			<Title>SJS Ice Team</Title>
 			<SubTitle>
 				An application to consolidate Google forms, Excel, and PDFs into a

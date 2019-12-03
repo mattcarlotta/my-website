@@ -1,6 +1,6 @@
 import React from "react";
 import Panel from "components/Panel";
-import Info from "components/Info";
+import FileDetails from "components/FileDetails";
 import SubTitle from "components/SubTitle";
 import Text from "components/Text";
 import Title from "components/Title";
@@ -9,19 +9,14 @@ import MERNKitImage from "images/mernkit.png";
 const MERNKit = () => (
 	<Panel>
 		<Text>
-			<Info style={{ marginTop: 20 }}>File: 6d65726e6b6974000000</Info>
-			<Info>Status: in orbit</Info>
-			<Info>Destination:&nbsp;unknown</Info>
-			<Info>
-				Source:&nbsp;
-				<a
-					href="https://github.com/mattcarlotta/fullstack-mern-kit"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					github
-				</a>
-			</Info>
+			<FileDetails
+				fileName="6d65726e6b6974000000"
+				destination={{
+					text: "roaming",
+				}}
+				status="in orbit"
+				source="https://github.com/mattcarlotta/fullstack-mern-kit"
+			/>
 			<Title>Full Stack MERN Kit</Title>
 			<SubTitle>
 				A boilerplate for MongoDB, Express, React/Redux and Node solutions.

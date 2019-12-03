@@ -1,6 +1,6 @@
 import React from "react";
 import Panel from "components/Panel";
-import Info from "components/Info";
+import FileDetails from "components/FileDetails";
 import SubTitle from "components/SubTitle";
 import Text from "components/Text";
 import Title from "components/Title";
@@ -9,28 +9,15 @@ import ReactHooks from "images/reacthooks.png";
 const HooksGuide = () => (
 	<Panel>
 		<Text>
-			<Info style={{ marginTop: 20 }}>File: 736a736963657465616d</Info>
-			<Info>Status: online</Info>
-			<Info>
-				Destination:&nbsp;
-				<a
-					href="https://react-hooks.mattcarlotta.io"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					https://react-hooks.mattcarlotta.io
-				</a>
-			</Info>
-			<Info>
-				Source:&nbsp;
-				<a
-					href="https://github.com/mattcarlotta/react-hooks"
-					rel="noopener noreferrer"
-					target="_blank"
-				>
-					github
-				</a>
-			</Info>
+			<FileDetails
+				fileName="7265616374686f6f6b73"
+				destination={{
+					link: "https://react-hooks.mattcarlotta.io",
+					text: "https://react-hooks.mattcarlotta.io",
+				}}
+				status="online"
+				source="https://github.com/mattcarlotta/react-hooks"
+			/>
 			<Title>React Hooks Guide</Title>
 			<SubTitle>
 				An educational website to help up-and-coming developers understand

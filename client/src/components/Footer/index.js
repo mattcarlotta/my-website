@@ -1,8 +1,9 @@
 import React from "react";
-import Center from "components/Center";
 
 const Footer = () => (
-	<Center style={{ marginTop: 40, fontSize: 16 }}>©2020 Matt Carlotta</Center>
+	<div css="margin-top: 40px;font-size: 16px;text-align:center;">
+		©2020 Matt Carlotta
+	</div>
 );
 
 export default Footer;
