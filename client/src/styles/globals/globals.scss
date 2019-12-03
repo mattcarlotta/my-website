@@ -29,19 +29,60 @@
 
 @import "~rc-tabs/assets/index.css";
 
+@-webkit-keyframes zoomOut {
+	from {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+@keyframes zoomOut {
+	from {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+		-webkit-transform: scale3d(0.3, 0.3, 0.3);
+		transform: scale3d(0.3, 0.3, 0.3);
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
 .rc-tabs-top,
 .rc-tabs-left,
 .rc-tabs-top .rc-tabs-bar,
 .rc-tabs-left .rc-tabs-bar {
 	border: 0;
-	color: #23c0fa;
+	// color: #23c0fa;
+	color: #1295f3;
 }
 
 .rc-tabs-nav-wrap {
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
-	// background-color: rgba(2, 38, 64, 0.15);
-	background-color: rgba(16, 142, 233, 0.6);
+	background-color: rgba(2, 38, 64, 0.45);
+	// background-color: rgba(16, 142, 233, 0.6);
+}
+
+.rc-tabs-tabpane-inactive {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-name: zoomOut;
+	animation-name: zoomOut;
 }
 
 .rc-tabs-tab:hover {

@@ -14,7 +14,7 @@ const Root = () => (
 		<Wrapper>
 			<LandingContainer>
 				<Header />
-				<Center style={{ paddingTop: 20 }}>
+				<Center style={{ paddingTop: 35 }}>
 					<Headline>MATT CARLOTTA</Headline>
 					<SubHeadline>
 						full stack web developer and commercial artist

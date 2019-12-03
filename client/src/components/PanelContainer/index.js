@@ -2,6 +2,10 @@
 import styled from "styled-components";
 
 export default styled.div`
+	@media (max-width: 1150px) {
+		width: calc(100% - 64px);
+	}
+
 	width: 100%;
 	max-width: 1036px;
 	font-size: 16px;

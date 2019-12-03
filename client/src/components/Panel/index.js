@@ -8,7 +8,6 @@ const Panel = ({ children }) => (
 		<Scrollbars
 			className="scrollbar"
 			thumbSize={400}
-			autoHeightMax={600}
 			renderThumbVertical={props => <div {...props} className="bar" />}
 			style={{ height: 860 }}
 		>
