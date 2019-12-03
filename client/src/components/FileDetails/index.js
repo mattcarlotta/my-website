@@ -14,13 +14,23 @@ const FileDetails = ({ destination, fileName, source, status }) => (
 		</Info>
 		<Info>
 			<span className="info">Destination:&nbsp;</span>
-			<a href={destination.link} rel="noopener noreferrer" target="_blank">
+			<a
+				href={destination.link}
+				rel="noopener noreferrer"
+				target="_blank"
+				aria-label="Link to hosted website"
+			>
 				{destination.text}
 			</a>
 		</Info>
 		<Info>
 			<span className="info">Source:&nbsp;</span>
-			<a href={source} rel="noopener noreferrer" target="_blank">
+			<a
+				href={source}
+				rel="noopener noreferrer"
+				target="_blank"
+				aria-label="Link to source code"
+			>
 				github
 			</a>
 		</Info>

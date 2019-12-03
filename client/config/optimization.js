@@ -62,32 +62,32 @@ const optimization = {
 		maxInitialRequests: Infinity,
 		minSize: 0,
 		/* group chunks by vendor to reduce large chunking */
-		// cacheGroups: {
-		// 	antdVendor: {
-		// 		test: /[\\/]node_modules[\\/](antd|@ant-design|rc-calendar|rc-select|rc-trigger|rc-time-picker|rc-drawer|rc-tabs|rc-pagination|rc-table|rc-animate|rc-resize-observer|rc-tooltip|rc-form|rc-checkbox|rc-dropdown|rc-menu|rc-align|rc-collpase|rc-util)[\\/]/,
-		// 		name: "antd",
-		// 	},
-		// 	reactVendor: {
-		// 		test: /[\\/]node_modules[\\/](react|react-dom|connected-react-router|react-router-dom|react-helmet|react-redux|redux|@redux-saga|redux-state-sync|react-router)[\\/]/,
-		// 		name: "react",
-		// 	},
-		// 	lodash: {
-		// 		test: /[\\/]node_modules[\\/](lodash)[\\/]/,
-		// 		name: "lodash",
-		// 	},
-		// 	froalaVendor: {
-		// 		test: /[\\/]node_modules[\\/](react-quill)[\\/]/,
-		// 		name: "quill",
-		// 	},
-		// 	chartingVendor: {
-		// 		test: /[\\/]node_modules[\\/](@nivo|d3-color|d3-time-format|d3-scale|d3-time|d3-scale-chromatic|d3-format|d3-hierarchy|d3-array|d3-interpolate|d3-shape)[\\/]/,
-		// 		name: "charting",
-		// 	},
-		// 	momentVendor: {
-		// 		test: /[\\/]node_modules[\\/](moment|moment-timezone)[\\/]/,
-		// 		name: "moment",
-		// 	},
-		// },
+		cacheGroups: {
+			antdVendor: {
+				test: /[\\/]node_modules[\\/](@ant-design|rc-tabs|rc-util)[\\/]/,
+				name: "antd",
+			},
+			reactVendor: {
+				test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+				name: "react",
+			},
+			reactIconsVendor: {
+				test: /[\\/]node_modules[\\/](react-icons)[\\/]/,
+				name: "react-icons",
+			},
+			lodash: {
+				test: /[\\/]node_modules[\\/](lodash)[\\/]/,
+				name: "lodash",
+			},
+			scrollbars: {
+				test: /[\\/]node_modules[\\/](react-custom-scrollbars|raf|dom-css)[\\/]/,
+				name: "scrollbars",
+			},
+			styledComponentsVendor: {
+				test: /[\\/]node_modules[\\/](styled-components)[\\/]/,
+				name: "styledcomponents",
+			},
+		},
 	},
 };
 

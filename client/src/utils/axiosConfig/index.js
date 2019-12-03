@@ -4,10 +4,7 @@ import axios from "axios";
 
 const { baseURL } = process.env;
 
-const app = axios.create({
-	baseURL,
-	withCredentials: true,
-});
+const app = axios.create({ baseURL });
 
 app.interceptors.response.use(
 	response => response,

@@ -1,6 +1,12 @@
 import cors from "cors";
 import morgan from "morgan";
+import moment from "moment-timezone";
 import compression from "compression";
+
+const { CLIENT, NODE_ENV } = process.env;
+const inTesting = NODE_ENV === "testing";
+
+moment.tz.setDefault("America/Los_Angeles");
 
 //= ===========================================================//
 /* APP MIDDLEWARE */
@@ -16,7 +22,6 @@ export default app => {
   app.set("trust proxy", true);
   app.use(
     cors({
-      credentials: true,
       origin: CLIENT,
     }),
   ); // allows receiving of cookies/tokens from front-end

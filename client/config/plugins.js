@@ -111,8 +111,8 @@ module.exports = () => {
 			new CopyWebpackPlugin([
 				{ from: "public/robots.txt" },
 				{ from: "public/manifest.json" },
-				{ from: "public/ITLogo_512x512.png" },
-				{ from: "public/ITLogo_192x192.png" },
+				{ from: "public/logo_512x512.png" },
+				{ from: "public/logo_192x192.png" },
 			]),
 			/* runs bundle analyzer if in staging */
 			analzye && inStaging && new BundleAnalyzerPlugin(),

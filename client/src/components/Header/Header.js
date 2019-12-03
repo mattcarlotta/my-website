@@ -7,16 +7,19 @@ const FOOTERLINKS = [
 	{
 		Icon: FaEnvelope,
 		link: "mailto:carlotta.matt@gmail.com",
+		description: "My email address",
 		title: "Email",
 	},
 	{
 		Icon: FaGithubSquare,
 		link: "https://github.com/mattcarlotta",
+		description: "My github repository",
 		title: "Github",
 	},
 	{
 		Icon: FaLinkedinIn,
 		link: "https://www.linkedin.com/in/mattcarlotta/",
+		description: "My LinkedIn profile",
 		title: "Linkedin",
 	},
 ];
@@ -25,9 +28,10 @@ const Header = ({ className }) => (
 	<FlexCenter>
 		<div className={className}>
 			<ul className="list">
-				{FOOTERLINKS.map(({ Icon, link, title }) => (
+				{FOOTERLINKS.map(({ description, Icon, link, title }) => (
 					<li className="list-item" key={title}>
 						<a
+							aria-label={description}
 							className="link"
 							href={link}
 							rel="noopener noreferrer"
