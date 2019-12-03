@@ -7,6 +7,8 @@ const Panel = ({ children }) => (
 	<PanelContainer>
 		<Scrollbars
 			className="scrollbar"
+			autoHide
+			autoHideTimeout={300}
 			thumbSize={400}
 			renderThumbVertical={props => <div {...props} className="bar" />}
 			style={{ height: 860 }}

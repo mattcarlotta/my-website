@@ -1,18 +1,21 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 import Panel from "components/Panel";
 import SubTitle from "components/SubTitle";
 import Title from "components/Title";
 import NVFCAppImage from "images/nvfcapp.gif";
 
-const nvfcApp = () => (
+const NVFCApp = () => (
 	<Panel>
 		<Title>
+			<span css="margin-right: 5px;">Nvidia Fan Controller (nvfc) App</span>
 			<a
+				css="position: relative;top: 2px;font-size: 15px;"
 				href="https://github.com/mattcarlotta/nvfcApp"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
-				Nvidia Fan Controller (nvfc) App
+				<FaGithub />
 			</a>
 		</Title>
 		<SubTitle>
@@ -30,4 +33,4 @@ const nvfcApp = () => (
 	</Panel>
 );
 
-export default nvfcApp;
+export default NVFCApp;

@@ -24,10 +24,15 @@ const FOOTERLINKS = [
 const Header = ({ className }) => (
 	<FlexCenter>
 		<div className={className}>
-			<ul>
+			<ul className="list">
 				{FOOTERLINKS.map(({ Icon, link, title }) => (
-					<li key={title}>
-						<a href={link} rel="noopener noreferrer" target="_blank">
+					<li className="list-item" key={title}>
+						<a
+							className="link"
+							href={link}
+							rel="noopener noreferrer"
+							target="_blank"
+						>
 							<Icon className="icon" />
 							<span className="title">{title}</span>
 						</a>

@@ -1,4 +1,5 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 import Panel from "components/Panel";
 import SubTitle from "components/SubTitle";
 import Title from "components/Title";
@@ -8,11 +9,20 @@ const HooksGuide = () => (
 	<Panel>
 		<Title>
 			<a
+				css="margin-right: 8px;"
 				href="https://react-hooks.mattcarlotta.io"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
 				React Hooks Guide
+			</a>
+			<a
+				css="position: relative;top: 2px;font-size: 15px;"
+				href="https://github.com/mattcarlotta/react-hooks"
+				rel="noopener noreferrer"
+				target="_blank"
+			>
+				<FaGithub />
 			</a>
 		</Title>
 		<SubTitle>

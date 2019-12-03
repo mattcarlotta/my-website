@@ -1,18 +1,21 @@
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 import Panel from "components/Panel";
 import SubTitle from "components/SubTitle";
 import Title from "components/Title";
 import SSDTGenAppImage from "images/ssdtgen.png";
 
-const ssdtGenApp = () => (
+const SSDTGenApp = () => (
 	<Panel>
 		<Title>
+			<span css="margin-right: 5px;">ssdtGen App</span>
 			<a
+				css="position: relative;top: 2px;font-size: 15px;"
 				href="https://github.com/mattcarlotta/ssdtGenApp"
 				rel="noopener noreferrer"
 				target="_blank"
 			>
-				ssdtGen App
+				<FaGithub />
 			</a>
 		</Title>
 		<SubTitle>
@@ -29,4 +32,4 @@ const ssdtGenApp = () => (
 	</Panel>
 );
 
-export default ssdtGenApp;
+export default SSDTGenApp;
