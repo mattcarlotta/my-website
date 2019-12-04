@@ -13,7 +13,7 @@ const Panel = ({ children }) => (
 			className="scrollbar"
 			autoHide
 			autoHideTimeout={300}
-			thumbSize={400}
+			thumbSize={200}
 			renderThumbVertical={props => <div {...props} className="bar" />}
 		>
 			<div css="padding: 30px;">
