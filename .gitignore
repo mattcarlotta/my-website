@@ -12,7 +12,6 @@ build/
 client/build
 client/coverage
 client/node_modules
-client/src/images
 
 
 #Server files and folders
