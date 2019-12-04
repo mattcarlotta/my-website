@@ -17,8 +17,8 @@ export default styled.div`
 	background-color: rgba(2, 38, 64, 0.8);
 	-webkit-backdrop-filter: blur(5px);
 	backdrop-filter: blur(5px);
-	color: #28c5ff;
-	text-shadow: 0px 0px 2px #fff;
+	color: #0096ff;
+	text-shadow: 0px 0px 1.5px #fff;
 	height: 815px;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
