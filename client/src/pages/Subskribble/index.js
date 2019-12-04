@@ -37,10 +37,10 @@ const Subskribble = () => (
 				<div css="cursor: pointer;" onClick={toggleModal}>
 					<img width="100%" src={SubskribbleImage} alt="subskribble.png" />
 				</div>
-				<Modal isOpen={isOpen} maxWidth="1750px" onClick={toggleModal}>
+				<Modal isOpen={isOpen} maxWidth="2000px" onClick={toggleModal}>
 					<Title>Subskribble</Title>
 					<img
-						css="width: 100%; max-width: 1500px; margin: 0 auto; display: block;"
+						css="width: 100%; max-width: 1550px; margin: 0 auto; display: block;"
 						src={SubskribbleImage}
 						alt="subskribble.png"
 					/>
