@@ -15,7 +15,7 @@
     "compile": "rimraf build && babel ./ -d build --no-comments --ignore node_modules,client,**/__tests__,coverage,setupTests.js,**/__mocks__",
     "dev": "better-npm-run dev",
     "initialize": "yarn install && cd client && yarn install && cd ..",
-    "pre-commit": "npm run lint && npm run test",
+    "pre-commit": "npm run lint && npm run test:front",
     "start": "better-npm-run start",
     "staging": "better-npm-run staging",
     "client": "npm run dev --prefix client",
