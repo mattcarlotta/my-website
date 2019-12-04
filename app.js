@@ -1,6 +1,6 @@
 import express from "express";
-import middlewares from "middlewares";
-import server from "server";
+import middlewares from "./middlewares";
+import server from "./server";
 
 const app = express();
 

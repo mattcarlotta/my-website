@@ -12,7 +12,7 @@
     "npm": ">=3"
   },
   "scripts": {
-    "compile": "rimraf build && babel ./ -d build --no-comments --ignore node_modules,client,**/__tests__,coverage,setupTests.js,**/__mocks__",
+    "compile": "rimraf build && babel ./ -d build --no-comments --ignore node_modules,client",
     "dev": "better-npm-run dev",
     "initialize": "yarn install && cd client && yarn install && cd ..",
     "pre-commit": "npm run lint && npm run test:front",
