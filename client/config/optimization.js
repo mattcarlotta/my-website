@@ -62,32 +62,32 @@ const optimization = {
 		maxInitialRequests: Infinity,
 		minSize: 0,
 		/* group chunks by vendor to reduce large chunking */
-		cacheGroups: {
-			antdVendor: {
-				test: /[\\/]node_modules[\\/](@ant-design|rc-tabs|rc-util)[\\/]/,
-				name: "antd",
-			},
-			reactVendor: {
-				test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
-				name: "react",
-			},
-			reactIconsVendor: {
-				test: /[\\/]node_modules[\\/](react-icons)[\\/]/,
-				name: "react-icons",
-			},
-			lodash: {
-				test: /[\\/]node_modules[\\/](lodash)[\\/]/,
-				name: "lodash",
-			},
-			scrollbars: {
-				test: /[\\/]node_modules[\\/](react-custom-scrollbars|raf|dom-css)[\\/]/,
-				name: "scrollbars",
-			},
-			styledComponentsVendor: {
-				test: /[\\/]node_modules[\\/](styled-components)[\\/]/,
-				name: "styledcomponents",
-			},
-		},
+		// cacheGroups: {
+		// 	antdVendor: {
+		// 		test: /[\\/]node_modules[\\/](@ant-design|rc-tabs|rc-util)[\\/]/,
+		// 		name: "antd",
+		// 	},
+		// 	reactVendor: {
+		// 		test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+		// 		name: "react",
+		// 	},
+		// 	reactIconsVendor: {
+		// 		test: /[\\/]node_modules[\\/](react-icons)[\\/]/,
+		// 		name: "react-icons",
+		// 	},
+		// 	lodash: {
+		// 		test: /[\\/]node_modules[\\/](lodash)[\\/]/,
+		// 		name: "lodash",
+		// 	},
+		// 	scrollbars: {
+		// 		test: /[\\/]node_modules[\\/](react-custom-scrollbars|raf|dom-css)[\\/]/,
+		// 		name: "scrollbars",
+		// 	},
+		// 	styledComponentsVendor: {
+		// 		test: /[\\/]node_modules[\\/](styled-components)[\\/]/,
+		// 		name: "styledcomponents",
+		// 	},
+		// },
 	},
 };
 
