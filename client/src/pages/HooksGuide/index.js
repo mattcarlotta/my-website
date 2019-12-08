@@ -33,7 +33,7 @@ const HooksGuide = () => (
 						<li>ExpressJS</li>
 						<li>ReactJS (w/ReduxJS)</li>
 						<li>NodeJS</li>
-						<li>Ngnix</li>
+						<li>Nginx</li>
 					</ul>
 				</Text>
 				<div css="cursor: pointer;" onClick={toggleModal}>
